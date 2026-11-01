@@ -1,5 +1,14 @@
 # Ready2Go — 음성 명령 서랍 물품 탐색 협동로봇
 
+> **이 저장소는 팀 프로젝트 [Jik-Kim/ready2go](https://github.com/Jik-Kim/ready2go)의 포크입니다** (5인 · 2026.10.02 – 10.16)
+>
+> **내 담당 (서동권) — 실물 로봇 모션 [`ros2_ws/src/ready2go_skills`](ros2_ws/src/ready2go_skills)**
+> - 스킬 서버: 서랍 열기 · 닫기, 집기 · 놓기, 끌기 · 밀기, 외력 감지와 안전 상태 복구
+> - 움직이기 전 판단: 벽 · 이웃 · 놓을 자리를 먼저 계산해 전략을 고르고, 안 되면 이유와 함께 「못 함」을 돌려줌
+> - 대표 PR: [#365](https://github.com/Jik-Kim/ready2go/pull/365) 손목 각도 점프로 생긴 J5 한계 정지 수정 + 실물 확인한 설정 6개 기본 켬 · [#364](https://github.com/Jik-Kim/ready2go/pull/364) 배치 난제 온톨로지 (배치 실패 83건 → 난제 18개, 시뮬레이션으로 4개 추가) · [#354](https://github.com/Jik-Kim/ready2go/pull/354) movesx 운반 등 설정 3개 (기본 꺼짐) · [#296](https://github.com/Jik-Kim/ready2go/pull/296) · [#241](https://github.com/Jik-Kim/ready2go/pull/241)
+> - 작업 기록: [practice/B](practice/B) (일지 · 트러블슈팅 176건)
+> - 개발 방식: Claude Code와 페어 프로그래밍으로 구현했습니다. 요구사항 · 설계 판단 · 실물 검증 · PR 리뷰와 머지는 제가 했고, 그래서 커밋 작성자 대부분이 `Claude`로 표시됩니다.
+
 > 두산 부트캠프 협동로봇 프로젝트 · 2026.10.02 ~ 10.16 (14일 스프린트) · 5인 팀
 
 ![최종 시연 — 에어팟 케이스 옆에 붙은 캐러멜 상자를 감지하고, 앞으로 끌어 손가락 자리를 만든 뒤 집어서 전달](docs/media/demo_airpods.gif)
